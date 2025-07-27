@@ -32,3 +32,20 @@ if [[ ! "$COMMIT_MSG" =~ $PATTERN ]]; then
   exit 1
 fi
 ```
+
+### Pre-push script:
+```bash
+#!/bin/bash
+
+echo "🚀 Running pre-push tests..."
+
+# Run all Mocha tests under Js/
+npx mocha "Js/test/**/*.test.js"
+
+if [ $? -ne 0 ]; then
+  echo "❌ Tests failed. Push aborted."
+  exit 1
+else
+  echo "✅ All tests passed. Proceeding with push."
+fi
+```
