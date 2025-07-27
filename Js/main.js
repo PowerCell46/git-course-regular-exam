@@ -1,5 +1,11 @@
 function main() {
   console.log("Init JS file");
+
+  const obj = {
+    name: "Peter",
+    age: 22,
+    profession: "Programmer - software applications",
+  };
 }
 main();
 
