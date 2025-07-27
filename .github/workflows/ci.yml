@@ -1,5 +1,3 @@
-# .github/workflows/ci.yml
-
 name: CI - Run JS Tests
 
 on:
@@ -22,6 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: Js
 
       - name: Run Mocha tests
-        run: npx mocha "Js/test/**/*.test.js"
+        run: npx mocha "**/*.test.js"
+        working-directory: Js
