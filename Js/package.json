@@ -10,7 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "chai": "^5.2.1",
+    "chai": "^4.3.7",
     "mocha": "^11.7.1",
     "prettier": "^3.6.2"
   }

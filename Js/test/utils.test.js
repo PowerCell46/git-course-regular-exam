@@ -1,4 +1,5 @@
-const { expect } = require("chai");
+const chai = require("chai");
+const { expect } = chai;
 const { sum, subtract } = require("../utils");
 
 describe("Utils", () => {
